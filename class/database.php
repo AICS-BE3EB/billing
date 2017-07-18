@@ -20,7 +20,7 @@ public function __construct() {
 
 		$connection = mysqli_connect($this->host,$this->username,$this->password,$this->database);      
 
-		$result = mysqli_query($connection, " SELECT ".$cols." as cols FROM ".$table." WHERE ".$condition." = ".$value." ") or die("Query fail: " . mysqli_error()); 
+		$result = mysqli_query($connection, " SELECT ".$cols." as cols FROM ".$table." WHERE ".$condition." = '".$value."' ") or die("Query fail: " . mysqli_error()); 
 
 		while($row = mysqli_fetch_array($result))
 		{
