@@ -1,0 +1,21 @@
+{
+  "name": "BE3EB-COS4118",
+  "homepage": "https://github.com/AICS-BE3EB/billing",
+  "authors": [
+    "rickyx12 <aizekrysler@gmail.com>"
+  ],
+  "description": "front end dependency for the cos4118 project",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
