@@ -2,10 +2,18 @@
 
 class database {
 
-	private $username = $_SERVER['username'];
-	private $password = $_SERVER['password'];
-	private $db = $_SERVER['db'];
-	private $host = $_SERVER['host'];
+///database credentials
+public $host;
+public $username;
+public $password;
+public $database;
+
+public function __construct() {
+  $this->host = $_SERVER['DB_HOST'];
+  $this->username = $_SERVER['DB_USER'];
+  $this->password = $_SERVER['DB_PASS'];
+  $this->database = $_SERVER['DB_DB'];
+}
 
 
 	public function selectNow($table,$cols,$condition,$value) {
