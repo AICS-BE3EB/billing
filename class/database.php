@@ -118,5 +118,35 @@ public function __construct() {
 
 	}
 
+	public function formatText($text) {
+		return ucfirst(strtolower($text));
+	}
+
+	public function formatDate($date) {
+		$date1 = preg_split ("/\-/", $date); 
+		$month = [
+				'01'=>'Jan',
+				'02'=>'Feb',
+				'03'=>'Mar',
+				'04'=>'Apr',
+				'05'=>'May',
+				'06'=>'Jun',
+				'07'=>'Jul',
+				'08'=>'Aug',
+				'09'=>'Sep',
+				'10'=>'Oct',
+				'11'=>'Nov',
+				'12'=>'Dec'];
+		return $month[$date1[1]]." ".$date1[2].", ".$date1[0];
+	}
+
+	public function formatTime($time) {
+		return date('h:i A', strtotime($time));
+	}
+
+	public function number_format($number) {
+		($number > 0) ? $x = number_format($number,2) : $x = "";
+		return $x;
+	}
 
 }
