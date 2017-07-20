@@ -1,7 +1,7 @@
 <?php 
-	require '../class/database.php';
-	require '../class/room.php';
-	require '../class/patient.php';
+	require '../../class/database.php';
+	require '../../class/room.php';
+	require '../../class/patient.php';
 
 	$db = new database();
 	$room = new room();
@@ -29,7 +29,7 @@
 				</td>
 				<td>
 					<?php if( $patient->getPatientByRoom($room) != "" ): ?>
-						<form method="POST" action="patient/patient.php" target="_blank">
+						<form method="POST" action="../patient/patient.php" target="_blank">
 							<input type="hidden" name="registrationNo" value="<?= $patient->getRegistrationNoByRoom($room) ?>">
 							<button type="submit" class="btn btn-success btn-xs">View</button>
 						</form>
