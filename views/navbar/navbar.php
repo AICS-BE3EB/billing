@@ -1,3 +1,8 @@
+
+  <script src="../../bower_components/jquery.autocomplete/jquery.autocomplete.min.js"></script>
+  <script src="../../js/global.js"></script>
+  <link rel="stylesheet" href="../../bower_components/jquery.autocomplete/jquery.autocomplete.css">
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
   
