@@ -1,0 +1,53 @@
+.navbar {
+	margin-bottom: 0px;
+}
+
+.col-md-2 {
+	padding-left: 0px;
+}
+
+.jumbotron {
+ width:100%;
+  height: 100vh;
+  background:#fff;
+  border-right: 1px solid black;
+}
+
+#patientName {
+	border-top:1px solid red;
+	border-bottom: 1px solid red;
+	height:10%;
+}
+
+#patientMenu {
+	padding-top:10%;
+}
+
+.sidebar-menu {
+	text-decoration: none;
+	color:black;
+	font-weight: bold;
+}
+
+.sidebar-menu {
+	margin-left:30%;
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+
+#information, #charges {
+	margin-top:5%;
+	margin-left:-3%;
+	height: 100vh;
+	overflow: auto;
+	width:100%;
+}
+
+ul {
+	list-style: none;
+	font-family: "Times New Roman", Times, serif;
+	margin-left:-3%;
+	font-size: 130%;
+
+}
