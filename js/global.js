@@ -1,6 +1,6 @@
 $(function(){
 
-	$('#patientSearch').autocomplete('patient/searchPatient.php',{
+	$('#patientSearch').autocomplete('../../views/patient/searchPatient.php',{
 		width: 555,
 	    matchContains: true,
 	    selectFirst: false
