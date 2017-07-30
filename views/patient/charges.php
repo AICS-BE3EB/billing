@@ -6,6 +6,7 @@
 	$cash = 0;
 	$philhealth = 0;
 	$hmo = 0;
+	$otShare = 0;
 
 ?>
 <table class="table table-hover">
@@ -18,6 +19,7 @@
 			<th>Cash</th>
 			<th>Philhealth</th>
 			<th>HMO</th>
+			<th>OT Share</th>
 			<th>Title</th>
 			<th>Details</th>
 			<th>User</th>
@@ -30,7 +32,7 @@
 					<i><?= $db->selectNow('patientCharges','description','itemNo',$itemNo) ?></i>
 				</td>
 				<td>
-					<?php if( $db->selectNow('patientCharges','title','itemNo',$itemNo) != 'PROFESSIONAL FEE' ): ?>
+					<?php if( $db->selectNow('patientCharges','title','itemNo',$itemNo) != 'PROFESSIONAL FEE' && $db->selectNow('patientCharges','title','itemNo',$itemNo) != 'DERMA' ): ?>
 						<i><?= $db->number_format($db->selectNow('patientCharges','sellingPrice','itemNo',$itemNo)) ?></i>
 					<?php else: ?>
 						<i><?= $db->selectNow('patientCharges','sellingPrice','itemNo',$itemNo) ?></i>
@@ -57,6 +59,10 @@
 					<?php $hmo += $db->selectNow('patientCharges','company','itemNo',$itemNo) ?>
 				</td>
 				<td>
+					<i><?= $db->number_format($db->selectNow('patientCharges','otShare','itemNo',$itemNo)) ?></i>
+					<?php $otShare += $db->selectNow('patientCharges','otShare','itemNo',$itemNo) ?>
+				</td>				
+				<td>
 					<i><?= $db->selectNow('patientCharges','title','itemNo',$itemNo) ?></i>
 				</td>
 				<td>
@@ -76,7 +82,7 @@
 			<td></td>
 			<td></td>
 			<td></td>
-			<?php if( ($cash + $philhealth + $hmo) != $total ): ?>
+			<?php if( ($cash + $philhealth + $hmo + $otShare) != $total ): ?>
 				<td><font color="red"><?= $db->number_format($total) ?></font></td>
 			<?php else: ?>
 				<td><?= $db->number_format($total) ?></td>
