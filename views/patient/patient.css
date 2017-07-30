@@ -34,9 +34,22 @@
 	font-family: "Times New Roman", Times, serif;
 }
 
+#charges-soa > tbody > tr > .seperator {
+	border:0px;
+}
+
+#charges-soa > tbody > tr > .charges {
+	border:0px;
+	padding:0%;
+}
+
+#charges-soa > tbody > tr > .charges {
+	border:0px;
+	padding:0%;
+}
 
 
-#information, #charges {
+#information, #charges, #soa {
 	margin-top:5%;
 	margin-left:-3%;
 	height: 100vh;

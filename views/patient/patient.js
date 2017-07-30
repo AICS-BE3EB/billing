@@ -7,6 +7,8 @@ $(function(){
 	$('#xray').hide();
 	$('#medicine').hide();
 	$('#supplies').hide();
+	$('#soa').hide();
+	$('#cart').hide();
 
 
 	$('#information-menu').click(function(){
@@ -18,6 +20,8 @@ $(function(){
 		$('#xray').hide();
 		$('#medicine').hide();
 		$('#supplies').hide();
+		$('#soa').hide();
+		$('#cart').hide();
 	});
 
 	$('#charges-menu').click(function(){
@@ -29,6 +33,8 @@ $(function(){
 		$('#xray').hide();
 		$('#medicine').hide();
 		$('#supplies').hide();
+		$('#soa').hide();
+		$('#cart').hide();
 	});
 
 	$('#doctor-menu').click(function(){
@@ -40,6 +46,8 @@ $(function(){
 		$('#xray').hide();
 		$('#medicine').hide();	
 		$('#supplies').hide();
+		$('#soa').hide();
+		$('#cart').hide();
 	});
 
 	$('#laboratory-menu').click(function(){
@@ -51,6 +59,8 @@ $(function(){
 		$('#xray').hide();
 		$('#medicine').hide();
 		$('#supplies').hide();
+		$('#soa').hide();
+		$('#cart').hide();
 	});
 
 	$('#ultrasound-menu').click(function(){
@@ -62,6 +72,8 @@ $(function(){
 		$('#xray').hide();	
 		$('#medicine').hide();
 		$('#supplies').hide();
+		$('#soa').hide();
+		$('#cart').hide();
 	});
 
 	$('#xray-menu').click(function(){
@@ -73,6 +85,8 @@ $(function(){
 		$('#xray').show();
 		$('#medicine').hide();	
 		$('#supplies').hide();
+		$('#soa').hide();
+		$('#cart').hide();
 	});
 
 	$('#medicine-menu').click(function(){
@@ -84,6 +98,8 @@ $(function(){
 		$('#xray').hide();
 		$('#medicine').show();
 		$('#supplies').hide();	
+		$('#soa').hide();
+		$('#cart').hide();
 	});
 
 	$('#supplies-menu').click(function(){
@@ -95,6 +111,34 @@ $(function(){
 		$('#xray').hide();
 		$('#medicine').hide();
 		$('#supplies').show();	
+		$('#soa').hide();
+		$('#cart').hide();
+	});
+
+	$('#soa-menu').click(function(){
+		$('#information').hide();
+		$('#charges').hide();
+		$('#doctor').hide();
+		$('#laboratory').hide();
+		$('#ultrasound').hide();	
+		$('#xray').hide();
+		$('#medicine').hide();
+		$('#supplies').hide();	
+		$('#soa').show();
+		$('#cart').hide();
+	});
+
+	$('#cart-menu').click(function(){
+		$('#information').hide();
+		$('#charges').hide();
+		$('#doctor').hide();
+		$('#laboratory').hide();
+		$('#ultrasound').hide();	
+		$('#xray').hide();
+		$('#medicine').hide();
+		$('#supplies').hide();	
+		$('#soa').hide();
+		$('#cart').show();
 	});
 
 });
