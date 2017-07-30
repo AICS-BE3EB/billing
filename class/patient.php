@@ -87,4 +87,21 @@ class patient {
 			}		
 	}
 
+	private $getAllRecordsByPatientNo_registrationNo;
+
+	public function getAllRecordsByPatientNo_registrationNo() {
+		return $this->getAllRecordsByPatientNo_registrationNo;
+	}
+
+	public function getAllRecordsByPatientNo($patientNo) {
+		$connection = mysqli_connect($this->host,$this->username,$this->password,$this->database);      
+
+		$result = mysqli_query($connection, " SELECT registrationNo FROM registrationDetails WHERE patientNo = '$patientNo' AND dateRegistered NOT LIKE '%DELETED%' ORDER BY dateUnregistered ASC ") or die("Query fail: " . mysqli_error()); 
+
+			while($row = mysqli_fetch_array($result))
+			{
+				$this->getAllRecordsByPatientNo_registrationNo[] = $row['registrationNo'];
+			}			
+	}
+
 }
