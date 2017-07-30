@@ -6,6 +6,7 @@ $(function(){
 	    selectFirst: false
 	}).result(function(event, data, formatted) {
 		console.log(data);
+		$("form[name='search-patient']").submit();
 	});
 
 });
