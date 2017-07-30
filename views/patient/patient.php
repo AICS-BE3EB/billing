@@ -44,8 +44,10 @@ $patient = new patient();
 						<a href="#" id="xray-menu" class="sidebar-menu">X-Ray</a>
 						<a href="#" id="medicine-menu" class="sidebar-menu">Medicine</a>
 						<a href="#" id="supplies-menu" class="sidebar-menu">Supplies</a>
+						<a href="#" id="soa-menu" class="sidebar-menu">S.O.A</a>
+						<a href="#" id="cart-menu" class="sidebar-menu">Charges Cart</a>
 					</div>
-				</div>				
+				</div>			
 			</div>
 		</div>
 		<div class="col-md-10">
@@ -80,6 +82,14 @@ $patient = new patient();
 
 			<div id="supplies" class="col-md-12">
 				<?php include 'supplies.php' ?>
+			</div>
+
+			<div id="soa" class="col-md-12">
+				<?php include 'SOA.php' ?>
+			</div>
+
+			<div id="cart" class="col-md-12">
+				<?php include 'cart.php' ?>
 			</div>
 
 		</div>
