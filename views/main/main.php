@@ -4,7 +4,7 @@
 	<head>
 	  <meta charset="UTF-8">
 	  <title>Billing System</title>
-	  <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+	  <script src="../../bower_components/jquery/dist/jquery.js"></script>
 <!-- 	  <script src="../bower_components/jquery.autocomplete/jquery.autocomplete.min.js"></script>
 	  <script src="../js/global.js"></script> -->
 	  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
