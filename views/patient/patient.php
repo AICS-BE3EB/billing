@@ -17,6 +17,7 @@ $patient = new patient();
 	   <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 	   <script src="patient.js"></script>
 	   <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+	   <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	   <link rel="stylesheet" href="patient.css">
 	  <?php include '../navbar/navbar.php' ?>
 	</head>
